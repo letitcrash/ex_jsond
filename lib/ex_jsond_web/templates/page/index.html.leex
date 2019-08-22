@@ -1,0 +1,9 @@
+<%= form_tag "", [class: "box w-full lg:w-2/6 xl:w-1/4 lg:mr-4 mb-8 md:mb-0", phx_submit: :save] do %>
+  <textarea id="story" name="input" rows="50" cols="133"></textarea>
+  <%= submit "Convert", phx_disable_with: "Saving..." %>
+<% end %>
+
+<section class="phx-hero">
+ <%= @json %>
+</section>
+
